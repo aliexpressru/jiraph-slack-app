@@ -1,0 +1,41 @@
+display_information:
+  name: Jiraph
+features:
+  bot_user:
+    display_name: Jiraph
+    always_online: false
+  shortcuts:
+    - name: Send thread to Issue
+      type: message
+      callback_id: attach-thread-shortcut
+      description: Send or update thread in existing issue
+    - name: Create issue from thread
+      type: message
+      callback_id: jira-issue-shortcut
+      description: Create issue from thread with uploading whole thread into issue comments.
+oauth_config:
+  scopes:
+    user:
+      - users.profile:read
+      - users:read
+      - users:read.email
+      - search:read
+    bot:
+      - channels:history
+      - channels:read
+      - chat:write
+      - chat:write.public
+      - emoji:read
+      - files:read
+      - files:write
+      - groups:history
+      - groups:read
+      - team:read
+      - users.profile:read
+      - users:read
+      - users:read.email
+      - commands
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false

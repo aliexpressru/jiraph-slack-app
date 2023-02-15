@@ -1,0 +1,5 @@
+.gitignore
+Dockerfile
+manifest.yml
+README.md
+doc_gifs

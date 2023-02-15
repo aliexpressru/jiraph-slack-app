@@ -1,0 +1,5 @@
+slack-bolt==1.14.0
+python-dotenv==0.20.0
+pydantic==1.10.4
+aiohttp==3.8.1
+emoji==2.0.0
